@@ -3,6 +3,15 @@
 <head>
 	<link rel="stylesheet" href="index.scss" />
 	<script type="text/javascript" src="index.js"></script>
+	<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "1b3f0f32-3b43-4522-9387-d43a071135f6",
+    });
+  });
+</script>
 </head>
 <body>
 	<button type="button" onclick="requestNotification()">Request Notification</button>
